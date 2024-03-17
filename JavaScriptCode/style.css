@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    height: 100vh;
+
+    margin: 0;
+    background-color: #FFFFFF;
+}
+
+.Glowny-Kontener {
+
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    background-color: #E5E5E5;
+
+    border-radius: 45px;
+
+    height: 50vh;
+    width: 70%;
+
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+}
+
+.Zegar {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    background-color: #E5E5E5;
+
+    border-radius: 45px;
+
+    height: 100%;
+    width: 100%;
+
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+}
+
+.Zegar h1 {
+    font-size: 17em;
+    color: #000000;
+
+    margin: 0;
+    padding: 0;
+
+    position: absolute;
+
+    top: 50%;
+    left: 51%;
+
+    transform: translate(-50%, -50%);
+    
+}
+
+.Przycisk-Plus, .Przycisk-Minus {
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    background-color: #FCA311;
+
+    border-radius: 50%;
+
+    height: 80px;
+    width: 80px;
+
+    font-size: 2.5em;
+    color: #000000;
+
+    position: absolute;
+    right: 80px;
+
+    border: transparent;
+
+}
+
+.Przycisk-Plus {
+    top: 34%;
+
+    margin: 0;
+    padding: 0;
+}
+
+.Przycisk-Minus {
+    bottom: 34%;
+
+    margin: 0;
+    padding-bottom: 10px;
+
+    line-height: 80px;
+
+}
+
+.Przycisk-Minus h1{
+
+    align-items: center;
+
+}
+
+.Przycisk-Start, .Przycisk-Pauza {
+
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    background-color: #FCA311;
+
+    border-radius: 50px;
+
+    height: 70px;
+    width: 145px;
+
+    font-size: 1.1em;
+    color: #000000;
+
+    position: absolute;
+    left: 80px;
+
+    border: transparent;
+    
+}
+
+.Przycisk-Start {
+    top: 34%;
+}
+
+.Przycisk-Pauza {
+    bottom: 34%;
+}
+
+.Przycisk-Plus, .Przycisk-Minus, .Przycisk-Pauza, .Przycisk-Start {
+    transition: transform 0.3s ease;
+}
+
+.Przycisk-Plus:hover, .Przycisk-Minus:hover, .Przycisk-Pauza:hover, .Przycisk-Start:hover {
+    transform: scale(1.1);
+}
+
+.Przycisk-Plus:active, .Przycisk-Minus:active, .Przycisk-Pauza:active, .Przycisk-Start:active {
+    animation: pulse 0.2s;
+}
+
+@keyframes pulse {
+
+    0% { transform: scale(1); }
+
+    50% { transform: scale(0.9); }
+
+    100% { transform: scale(1); }
+
+}
+
+.Przycisk-Plus, .Przycisk-Minus, .Przycisk-Pauza, .Przycisk-Start {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.zegar {
+    animation: pulse 1s infinite;
+}
